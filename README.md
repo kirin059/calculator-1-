@@ -29,6 +29,7 @@
 3️⃣ `수식 input`(.previous)과 `결과값 input`(.current)을 다르게 적용하기
 
 수식이 입력되는 칸을 column으로 2등분 한 뒤, 아래 input은 수식을 적용 
+
 ➡ `=` 버튼을 누르면 아래 input에는 연산 값이 남고, 수식은 위 input으로 올라간다
 
 ```css
