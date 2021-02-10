@@ -1,0 +1,27 @@
+# calculator 만들기(1) 
+## css
+---
+
+1️⃣ grid-template-columns: repeat(4, 100px) && grid-template-rows: repeat(5, 100px);
+
+계산기 버튼 grid 레이아웃 구현 >> `grid` 사용
+```css
+  .calculatorBtn {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);    /* 세로로 100px 너비를 4번 반복한다 */
+    grid-template-rows: repeat(5, 100px);
+    justify-content: center;
+    align-items: center;
+}
+```
+
+2️⃣ grid-column: span 2;
+
+계산기 버튼 2칸을 1칸으로 합치기
+
+```css
+  .spanTwo {
+    grid-column: span 2;
+}
+  // 클래스 spanTwo를 적용한 뒤 css로 `span 2`를 적용한다
+```
