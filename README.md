@@ -15,6 +15,8 @@
 }
 ```
 
+
+
 2️⃣ grid-column: span 2;
 
 계산기 버튼 2칸을 1칸으로 합치기
@@ -25,6 +27,8 @@
 }
   // 클래스 spanTwo를 적용한 뒤 css로 `span 2`를 적용한다
 ```
+
+
 
 3️⃣ `수식 input`(.previous)과 `결과값 input`(.current)을 다르게 적용하기
 
