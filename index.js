@@ -1,6 +1,5 @@
 "use strict";
 
-const clickBtn = document.querySelectorAll("input");
 const operatorBtn = document.getElementsByClassName("operator"); // 연산 버튼(+, -, *, /, =)  //배열로 저장
 const numBtn = document.getElementsByClassName("number"); // 숫자 버튼(0~9)
 
@@ -19,7 +18,7 @@ function handleNumber() {
     // 숫자 입력 기능
     for (let i = 0; i < numBtn.length; i++) {
         numBtn[i].addEventListener("click", (e) => {
-            // console.log(e.target.value);
+            //console.log(e.target.value);
             // document.querySelector(".current").value += e.target.value;
             current.value = (current.value += e.target.value).toLocaleString();
         });
@@ -40,7 +39,7 @@ function resultCalculation() {
     const calBtn = document.querySelector(".result");
 
     calBtn.addEventListener("click", (e) => {
-        console.log(e.target.value);
+        //console.log(e.target.value);
         previous.value = current.value;
         current.value = eval(current.value).toLocaleString();
     });
@@ -62,7 +61,7 @@ initCalculation();
 function delCalculation() {
     const delBtn = document.querySelector(".del");
     delBtn.addEventListener("click", () => {
-        console.log(delBtn);
+        //console.log(delBtn);
         current.value = current.value.slice(handleNumber.length, -1);
     });
 }
